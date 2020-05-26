@@ -1,0 +1,9 @@
+---
+ 
+deployment:
+ 
+ tasks:
+ 
+ - export DEPLOYPATH=/home/nnfproco/nnf-pro.com
+ 
+ - /usr/bin/rsync -Paz * $DEPLOYPATH --delete
