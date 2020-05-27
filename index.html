@@ -23,11 +23,6 @@
 	}
 
 	.float{
-		position:fixed;
-		width:50px;
-		height:50px;
-		bottom:120px;
-		right:34px;
 		background-color:#25d366;
 		color:#FFF;
 		border-radius:50px;
@@ -35,10 +30,12 @@
 	 	font-size:30px;
 		box-shadow: 2px 2px 3px #999;
 	  	z-index:100;
+		padding: 6px 1px;
 	}
 
 	.my-float{
-		margin-top:10px;
+		/*margin-top:10px;*/
+		padding: 10px;
 	}
 </style>
 <!DOCTYPE html>
@@ -576,12 +573,13 @@
 	      </div>
 	    </div>
 	    <!--/ Row end -->
-	    <a href="https://api.whatsapp.com/send?phone=6282122922611&text=Hello!%20ada%20yg%20bisa%20kami%20bantu%3F" class="float" target="_blank">
-			<i class="fa fa-whatsapp my-float"></i>
-		</a>
 
 	    <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix position-fixed">
-	      <button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
+		  <a href="https://api.whatsapp.com/send?phone=6282122922611&text=Hello!%20ada%20yg%20bisa%20kami%20bantu%3F" class="float" target="_blank">
+				<i class="fa fa-whatsapp my-float"></i>
+		  </a>
+		  <br/>
+	      <button style="margin: 20px 6px 0" class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
 	    </div>
 	  </div>
 	  <!--/ Container end -->

@@ -255,20 +255,20 @@ jQuery(function ($) {
 
   $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
-      $('#back-to-top').fadeIn();
+      $('#back-to-top > button').fadeIn();
     } else {
-      $('#back-to-top').fadeOut();
+      $('#back-to-top > button').fadeOut();
     }
   });
   // scroll body to 0px on click
-  $('#back-to-top').click(function () {
-    $('#back-to-top').tooltip('hide');
+  $('#back-to-top > button').click(function () {
+    $('#back-to-top > button').tooltip('hide');
     $('body,html').animate({
       scrollTop: 0
     }, 800);
     return false;
   });
 
-  $('#back-to-top').tooltip('hide');
+  $('#back-to-top > button').tooltip('hide');
 
 });
