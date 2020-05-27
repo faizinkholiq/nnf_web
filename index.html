@@ -40,6 +40,46 @@
 	.feature-box .feature-content{
 		padding: 18px;
 	}
+
+	ul.cd-hero-slider{
+		height: 58vh;
+	}
+
+	/* (320x480) Smartphone, Portrait */
+	@media only screen and (max-width: 1050px){
+	    /* insert styles here */
+
+		ul.cd-hero-slider{
+			height: 30vh;
+		}
+
+		div.cd-full-width{
+			padding-top: 180px!important; 
+		}
+	}
+
+	@media only screen and (max-width: 800px){
+		ul.navbar-nav{
+			margin-top: 20px!important;
+		}
+
+		div.cd-full-width{
+			padding-top: 180px!important; 
+		}	
+
+		ul.cd-hero-slider{
+			height: 40vh;
+		}
+	}
+
+	@media only screen and (max-width: 400px){
+		div.cd-full-width{
+			padding-top: 180px!important; 
+		}
+		ul.cd-hero-slider{
+			height: 58vh;
+		}
+	}
 </style>
 <!DOCTYPE html>
 <html lang="zxx">
@@ -101,7 +141,7 @@
 				<span class="fa fa-bars"></span>
 			</button>
 
-			<div class="collapse navbar-collapse text-center" id="navigation">
+			<div class="collapse navbar-collapse text-center" id="navigation" >
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
 						<a class="nav-link" href="index.html#home">Home</a>
@@ -128,12 +168,12 @@
 <!-- Slider start -->
 <section id="home" class="p-0">
 	<div id="main-slide" class="cd-hero">
-		<ul class="cd-hero-slider" style="height: 57vh;">
+		<ul class="cd-hero-slider">
 			<li class="selected">
 				<div class="overlay2">
 					<img class="" src="images/slider/bg1.jpg" alt="slider">
 				</div>
-				<div class="cd-full-width" style="padding-top: 195px;">
+				<div class="cd-full-width">
 					<h2>Jasa Pembuatan Web Aplikasi</h2>
 					<h3>Kami tumbuh untuk memberikan solusi</h3>
 		<!-- 			<a href="#0" class="btn btn-primary white cd-btn">Start Now</a>
@@ -335,7 +375,7 @@
 
 				<div class="gap-30"></div>
 				<div class="list-choose-us row">
-					<div class="col-md-6 col-sm-12 image-block-content">
+					<div class="col-lg-12 col-xl-6 col-sm-12 image-block-content">
 						<span class="feature-icon float-left"><i class="fa fa-users"></i></span>
 						<div class="feature-content">
 							<h3>User Requirement</h3>
@@ -344,7 +384,7 @@
 					</div>
 					<!--/ End 1st block -->
 
-					<div class="col-md-6 col-sm-12 image-block-content">
+					<div class="col-lg-12 col-xl-6 col-sm-12 image-block-content">
 						<span class="feature-icon float-left"><i class="fa fa-diamond"></i></span>
 						<div class="feature-content">
 							<h3>Analysist Requerment</h3>
@@ -353,7 +393,7 @@
 					</div>
 					<!--/ End 1st block -->
 
-					<div class="col-md-6 col-sm-12 image-block-content">
+					<div class="col-lg-12 col-xl-6 col-sm-12 image-block-content">
 						<span class="feature-icon float-left"><i class="fa fa-street-view"></i></span>
 						<div class="feature-content">
 							<h3>Design</h3>
@@ -361,7 +401,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-6 col-sm-12 image-block-content">
+					<div class="col-lg-12 col-xl-6 col-sm-12 image-block-content">
 						<span class="feature-icon float-left"><i class="fa fa-street-view"></i></span>
 						<div class="feature-content">
 							<h3>Confirmation</h3>
@@ -369,7 +409,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-6 col-sm-12 image-block-content">
+					<div class="col-lg-12 col-xl-6 col-sm-12 image-block-content">
 						<span class="feature-icon float-left"><i class="fa fa-street-view"></i></span>
 						<div class="feature-content">
 							<h3>Develop</h3>
@@ -377,7 +417,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-6 col-sm-12 image-block-content">
+					<div class="col-lg-12 col-xl-6 col-sm-12 image-block-content">
 						<span class="feature-icon float-left"><i class="fa fa-street-view"></i></span>
 						<div class="feature-content">
 							<h3>Implementation</h3>
